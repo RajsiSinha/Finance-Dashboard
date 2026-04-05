@@ -36,7 +36,7 @@ A modern, responsive finance dashboard to track income, expenses, and financial 
 
 ##  Tech Stack
 
-* **Frontend:** Next.js, Typescript.js
+* **Frontend:** Next.js, TypeScript
 * **Styling:** Tailwind CSS
 * **State Management:** Zustand
 * **Charts:** Recharts
