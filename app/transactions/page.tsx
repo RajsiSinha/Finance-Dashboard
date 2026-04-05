@@ -10,7 +10,7 @@ export default function TransactionsPage() {
   const [open, setOpen] = useState(false);
   const { transactions, role } = useStore();
 
-  // 📊 STATS
+  //  STATS
   const totalTransactions = transactions.length;
 
 const totalIncome = transactions
@@ -36,7 +36,7 @@ const totalExpense = transactions
           </p>
         </div>
 
-        {/* ✅ ADD BUTTON (RBAC) */}
+        {/*  ADD BUTTON (RBAC) */}
   {role === "admin" && (
   <button
     onClick={() => setOpen(true)}

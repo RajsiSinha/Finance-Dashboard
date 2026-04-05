@@ -14,7 +14,7 @@ export default function TransactionTable() {
 
   const { transactions, deleteTransaction, role } = useStore();
 
-  // 🔍 FILTER
+  //  FILTER
   let filtered = transactions.filter((t) => {
     const matchSearch = t.category
       .toLowerCase()
@@ -26,7 +26,7 @@ export default function TransactionTable() {
     return matchSearch && matchType;
   });
 
-  // 🔥 SORTING
+  //  SORTING
   let sorted = [...filtered];
 
   if (sortOrder === "latest") {
@@ -93,7 +93,7 @@ export default function TransactionTable() {
               <th className="text-left">Amount</th>
               <th className="text-left">Type</th>
               
-              {/* ✅ Only show for admin */}
+              {/* Only show for admin */}
               {role === "admin" && (
                 <th className="text-left">Actions</th>
               )}
@@ -129,7 +129,7 @@ export default function TransactionTable() {
                   </span>
                 </td>
 
-                {/* ✅ ACTIONS only for admin */}
+                {/*  ACTIONS only for admin */}
                 {role === "admin" && (
                   <td>
                     <div className="flex gap-2">

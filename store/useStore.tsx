@@ -15,22 +15,22 @@ type Transaction = {
 type Store = {
   transactions: Transaction[];
 
-  // 🔥 UI STATE
+  //  UI STATE
   role: "viewer" | "admin";
 
-  // 🔥 ACTIONS
+  //  ACTIONS
   addTransaction: (t: Transaction) => void;
   deleteTransaction: (id: string) => void;
   updateTransaction: (t: Transaction) => void;
 
   setRole: (role: "viewer" | "admin") => void;
 
-  // 📊 DERIVED (FUNCTION STYLE)
+  //  DERIVED (FUNCTION STYLE)
   totalIncome: () => number;
   totalExpense: () => number;
   balance: () => number;
 
-  // 🔄 RESET
+  //  RESET
   reset: () => void;
 };
 
@@ -42,19 +42,19 @@ export const useStore = create<Store>()(
       // UI
       role: "viewer",
 
-      // ➕ ADD
+      //  ADD
       addTransaction: (t) =>
         set((state) => ({
           transactions: [{ ...t }, ...state.transactions],
         })),
 
-      // 🗑 DELETE
+      // DELETE
       deleteTransaction: (id) =>
         set((state) => ({
           transactions: state.transactions.filter((t) => t.id !== id),
         })),
 
-      // ✏️ UPDATE
+      //  UPDATE
       updateTransaction: (updated) =>
         set((state) => ({
           transactions: state.transactions.map((t) =>
@@ -62,10 +62,10 @@ export const useStore = create<Store>()(
           ),
         })),
 
-      // 🔄 ROLE
+      //  ROLE
       setRole: (role) => set({ role }),
 
-      // 📊 DERIVED VALUES
+      //  DERIVED VALUES
       totalIncome: () =>
         get().transactions
           .filter((t) => t.type === "income")
@@ -79,14 +79,14 @@ export const useStore = create<Store>()(
       balance: () =>
         get().totalIncome() - get().totalExpense(),
 
-      // 🔄 RESET
+      //  RESET
       reset: () =>
         set({ transactions: initialData as Transaction[] }),
     }),
     {
       name: "finance-store",
 
-      // ✅ Persist only required fields
+      //  Persist only required fields
       partialize: (state) => ({
         transactions: state.transactions,
         role: state.role,

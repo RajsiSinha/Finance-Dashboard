@@ -17,13 +17,13 @@ import { format } from "date-fns";
 export default function BalanceChart() {
   const { transactions } = useStore();
 
-  // 🔥 STEP 1: SORT BY DATE
+  // SORT BY DATE
   const sorted = [...transactions].sort(
     (a, b) =>
       new Date(a.date).getTime() - new Date(b.date).getTime()
   );
 
-  // 🔥 STEP 2: RUNNING BALANCE
+  //  RUNNING BALANCE
   let balance = 0;
 
   const data = sorted.map((t) => {

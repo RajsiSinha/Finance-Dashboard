@@ -9,7 +9,7 @@ export default function Insights() {
    const income = totalIncome();
    const expense = totalExpense();
 
-  // 🔥 TOP CATEGORY CALCULATION
+  // TOP CATEGORY CALCULATION
   const categoryMap: Record<string, number> = {};
 
   transactions.forEach((t) => {
@@ -25,7 +25,7 @@ export default function Insights() {
 
   const topCategory = sorted.length > 0 ? sorted[0] : ["N/A", 0];
 
-  // 🔥 MONTH COMPARISON (REALISTIC)
+  //  MONTH COMPARISON (REALISTIC)
   const lastExpense = expense + 1500;
 
   const change =
@@ -33,7 +33,7 @@ export default function Insights() {
       ? 0
       : ((expense - lastExpense) / lastExpense) * 100;
 
-  // 🔥 SMART INSIGHT
+  //  SMART INSIGHT
   const incomePercent =
     income + expense === 0
       ? 0

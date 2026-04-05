@@ -1,50 +1,33 @@
 
 @import "tailwindcss";
 
-/* 🌞 LIGHT MODE */
-:root {
-  --bg: #f3f4f6;
-  --card: #ffffff;
-  --text: #171717;
-  --border: #e5e7eb;
-  --input: #ffffff;
-}
 
-/* 🌙 DARK MODE */
-.dark {
-  --bg: #111827;
-  --card: #1f2937;
-  --text: #f9fafb;
-  --border: #374151;
-  --input: #111827;
-}
-
-/* 🔥 BASE */
+/*  BASE */
 body {
   background: var(--bg);
   color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ✨ SMOOTH TRANSITIONS */
+/*  SMOOTH TRANSITIONS */
 * {
   transition: background-color 0.25s ease, color 0.25s ease, border 0.25s ease;
 }
 
-/* 🧱 CARD */
+/*  CARD */
 .card {
   background: var(--card);
   border: 1px solid var(--border);
 }
 
-/* 📝 INPUT */
+/*  INPUT */
 .input {
   background: var(--input);
   border: 1px solid var(--border);
   color: var(--text);
 }
 
-/* 📊 TABLE ROW HOVER */
+/*  TABLE ROW HOVER */
 .table-row:hover {
   background: rgba(0, 0, 0, 0.04);
 }

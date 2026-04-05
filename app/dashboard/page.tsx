@@ -16,7 +16,6 @@ export default function DashboardPage() {
   return (
     <div className="p-8 space-y-8 max-w-7xl mx-auto">
 
-      {/* TITLE */}
       <div>
         <h1 className="text-2xl font-bold text-gray-800">
           Dashboard Overview
@@ -46,7 +45,7 @@ export default function DashboardPage() {
           </h2>
 
           <p className="text-xs mt-3 bg-white/20 px-3 py-1 rounded-full inline-block">
-            {isPositive ? "You are saving money" : "Overspending ⚠️"}
+            {isPositive ? "You are saving money" : "Overspending "}
           </p>
         </div>
 

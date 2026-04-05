@@ -9,7 +9,7 @@ export default function Insights() {
   const income = totalIncome();
   const expense = totalExpense();
 
-  // ✅ FIXED LAST MONTH LOGIC
+ 
   const lastExpense = expense + 1500;
 
   const change =
@@ -17,7 +17,7 @@ export default function Insights() {
       ? 0
       : ((expense - lastExpense) / lastExpense) * 100;
 
-  // 🔥 CATEGORY CALCULATION
+  //  CATEGORY CALCULATION
   const categoryMap: Record<string, number> = {};
 
   transactions.forEach((t) => {
@@ -27,14 +27,14 @@ export default function Insights() {
     }
   });
 
-  // ✅ SAFE TOP CATEGORY
+  //  TOP CATEGORY
   const sorted = Object.entries(categoryMap).sort(
     (a, b) => b[1] - a[1]
   );
 
   const topCategory = sorted.length > 0 ? sorted[0] : ["N/A", 0];
 
-  // 🔥 RATIO
+  //  RATIO
   const incomePercent =
     income + expense === 0
       ? 0
@@ -43,7 +43,7 @@ export default function Insights() {
   return (
     <div className="p-8 space-y-8 max-w-7xl mx-auto">
 
-    {/* ✅ HEADER */}
+    {/*  HEADER */}
     <div>
       <h1 className="text-2xl font-bold text-gray-800">
         Insights

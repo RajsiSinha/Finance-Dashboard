@@ -13,7 +13,7 @@ import { useStore } from "@/store/useStore";
 export default function SpendingChart() {
   const { transactions } = useStore();
 
-  // 🔥 CATEGORY AGGREGATION (INSIDE COMPONENT)
+  // CATEGORY AGGREGATION (INSIDE COMPONENT)
   const categoryMap: Record<string, number> = {};
 
   transactions.forEach((t) => {

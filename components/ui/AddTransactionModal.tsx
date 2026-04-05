@@ -121,7 +121,7 @@ export default function AddTransactionModal({
 
           <div className="grid grid-cols-2 gap-4">
 
-            {/* ✅ CATEGORY */}
+            {/* CATEGORY */}
             <div>
               <label className="text-sm text-gray-600">
                 Category
@@ -138,7 +138,7 @@ export default function AddTransactionModal({
               />
             </div>
 
-            {/* ✅ AMOUNT */}
+            {/* AMOUNT */}
             <div>
               <label className="text-sm text-gray-600">
                 Amount
