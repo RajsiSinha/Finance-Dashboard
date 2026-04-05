@@ -13,13 +13,13 @@ export default function Navbar() {
     >
       <div className="flex items-center gap-4">
 
-        {/* 🔔 Notification */}
+        {/*  Notification */}
         <div className="p-2 rounded-full hover:bg-gray-100 cursor-pointer transition relative">
           <Bell size={20} className="text-gray-600" />
           <span className="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
         </div>
 
-        {/* 🔄 Role Switch */}
+        {/*  Role Switch */}
         <div className="relative">
           <select
             value={role}
@@ -37,7 +37,7 @@ export default function Navbar() {
           />
         </div>
 
-        {/* 👤 Profile */}
+        {/* Profile */}
         <div className="flex items-center gap-3 cursor-pointer hover:bg-gray-100 p-2 rounded-lg transition">
           <div className="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold shadow-sm">
             RS
