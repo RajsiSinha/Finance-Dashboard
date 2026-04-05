@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Finance Dashboard — Zorvyn
 
-## Getting Started
+A modern, responsive finance dashboard to track income, expenses, and financial insights with a clean and intuitive UI.
 
-First, run the development server:
+ 🌐 **Live Demo:** [View Zorvyn Dashboard](https://finance-dashboard-eight-blush.vercel.app/)
+ 
+![Zorvyn Dashboard Screenshot](./public/screenshots/dashboard.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
+##  Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Dashboard Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* Real-time balance tracking
+* Income vs Expense summary
+* Interactive charts (Line + Pie)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Transactions Management
 
-## Learn More
+* Add, edit, delete transactions
+* Smart filtering & sorting
+* Search by category
 
-To learn more about Next.js, take a look at the following resources:
+### Insights
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Top spending category detection
+* Monthly comparison analysis
+* Income vs expense ratio insights
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Role-Based Access
 
-## Deploy on Vercel
+* **Admin** → Full control (add/edit/delete)
+* **Viewer** → Read-only mode
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+##  Tech Stack
+
+* **Frontend:** React, Next.js
+* **Styling:** Tailwind CSS
+* **State Management:** Zustand
+* **Charts:** Recharts
+* **Icons:** Lucide React
+* **Deployment:** Vercel
+
+---
+
+## ⚙️ Installation
+
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Start the Development Server**
+   ```bash
+   npm run dev
+   ```
+
+3. **Build for Production**
+   ```bash
+   npm run build
+   ```
+
+
+---
+
+## 🚀 Deployment
+
+Deployed on **Vercel** for fast and seamless performance.
+
+---
+
+## 💡 Highlights
+
+* Clean UI with smooth animations
+* Optimized state management using Zustand
+* Modular and scalable component structure
+* Real-world dashboard experience
+
+---
+
+
+
